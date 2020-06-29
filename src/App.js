@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect} from 'react';
 import './App.css';
+import {useApiRequest} from "./hooks/api-request";
+import ResultContainer from "./components/ResultContainer";
 
 function App() {
+  const [results, search] = useApiRequest()
+
+  useEffect(() => {
+    setTimeout(() => {
+      search('freehold')
+    }, 5000)
+  }, [search])
+
+  console.log(results.leading_groups)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        {results && Array.isArray(results.leading_groups) && <ResultContainer rows={results.leading_groups}/>}
+        <pre>
+          {JSON.stringify(results, null, 2)}
+        </pre>
+      </main>
     </div>
   );
 }

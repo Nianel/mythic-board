@@ -73,13 +73,13 @@ const images = [
         id: 'waycrest-manor'
     },
     {
-        url: '/static/images/grid-list/camera.jpg',
+        url: 'https://wow.zamimg.com/uploads/blog/images/18130-8-3-operation-mechagon-heroic-difficulty-mythic-tuning-and-vision-of-perfection.jpg',
         title: 'Operation: Mechagon - Junkyard',
         width: '8%',
         id: 'operation-mechagon-junkyard'
     },
     {
-        url: '/static/images/grid-list/camera.jpg',
+        url: 'https://wow.zamimg.com/uploads/screenshots/normal/840058-operation-mecagone.jpg',
         title: 'Operation: Mechagon - Workshop',
         width: '8%',
         id: 'operation-mechagon-workshop'

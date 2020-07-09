@@ -9,8 +9,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import HomeIcon from '@material-ui/icons/Home'
-import LeaderboardButton from "./LeaderboardButton";
-import ButtonBases from "./test";
+import LeaderboardButton from "./LeaderboardButton"
+import ButtonBases from "./test"
 
 const useStyles = makeStyles((theme) => ({
     root: {

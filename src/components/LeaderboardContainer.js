@@ -8,7 +8,7 @@ import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
 import Paper from '@material-ui/core/Paper'
 import {getTime} from "../utils/Utils"
-import {useApiRequest} from "../hooks/api-request";
+import {useApiRequest} from "../hooks/api-request"
 
 const useStyles = makeStyles({
     table: {
